@@ -11,15 +11,15 @@
     List<string> lst = new List<string>() { "蘋果", "香蕉", "荔枝","鳳梨", "西瓜" };
 }
 <div>
-        @foreach (var item in lst)
-        {
+        
             <ol>
-                <li>蘋果</li>
-                <li>香蕉</li>
-                <li>荔枝</li>
-                <li>鳳梨</li>
-                <li>西瓜</li>
-            </ol>
+                @foreach (var item in lst)
+                {
+                    <li>
+                        @item
+                    </li>
+                }
+                </ol>
 
         }
    
